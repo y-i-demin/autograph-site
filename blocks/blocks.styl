@@ -1,3 +1,17 @@
+$page-width = 1003px
+
+$blue-d = #334352
+$blue-l = #465867
+$brown-l = #c79a6b
+$grey-l = #d2d6d9
+
+clearfix()
+  &::after,
+  &::before
+    content: ' '
+    display: table
+    clear: both
+
 *
   padding: 0
   margin: 0
@@ -9,7 +23,7 @@ body
 
 body
   font: 80% Arial, sans-serif
-  min-width: 980px
+  min-width: $page-width
 
 @font-face
   font-family: plumb-re
@@ -30,3 +44,9 @@ body
 @font-face
   font-family: plumb-bo
   src: url('../font/plumb-bo.ttf')
+
+a
+  transition: color 0.25s ease-out
+
+@import('header/header')
+@import('navigation/navigation')

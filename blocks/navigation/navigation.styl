@@ -1,0 +1,42 @@
+.navigation
+  width: $page-width
+  margin: 0 auto 45px
+
+  &-list
+    display: flex
+    width: 100%
+
+    list-style: none
+    box-shadow: inset 0 0 0 2px $grey-l
+
+    clearfix()
+
+  &-item
+    flex-grow: 1
+
+    /* fallback */
+    float: left
+    min-width: 15%
+
+    border-left: 1px solid $grey-l
+    text-align: center
+
+    &:first-child
+      border-left: none
+
+    & a:link,
+    & a:visited
+      font-family: plumb-me
+      font-size: 19px
+
+      display: block
+      padding: 25px 40px
+
+      color: $blue-d
+
+      text-transform: uppercase
+      text-decoration: none
+
+      &:hover,
+      &:active
+        color: $brown-l
