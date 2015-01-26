@@ -1,0 +1,6 @@
+design/*
+node_modules/*
+static/js/*
+static/css/*
+.DS_Store
+.idea
