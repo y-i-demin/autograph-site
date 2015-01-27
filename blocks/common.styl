@@ -36,6 +36,8 @@ a
   &:hover
     text-decoration: none
 
+.g-hidden
+  display: none !important
 
 .sublink
   z-index: 10
@@ -288,10 +290,34 @@ a
 
     content: ''
 
+.paranja
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  background: rgba(27, 41, 55, .95)
+
 .portfolio
   margin: 50px 0 70px
 
   clearfix()
+
+  &-box
+    position: fixed
+    top: 5%
+    left: @top
+    right: @top
+    bottom: @top
+
+    display: table-cell
+
+    text-align: center
+    vertical-align: middle
+
+    &-image
+      border: 1px dashed $brown-l
 
   &-item
     display: block
