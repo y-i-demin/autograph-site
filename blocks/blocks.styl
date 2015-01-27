@@ -3,9 +3,12 @@ $page-width = 1003px
 $blue-d = #334352
 $blue-l = #465867
 $brown-l = #c79a6b
+$grey-xl = #f5f5f5
 $grey-l = #d2d6d9
 $grey-d = #b4b4b4
 $grey-xd = #555
+$grey-xxd = #333
+$yellow = #fed501
 
 clearfix()
   &::after,
@@ -24,10 +27,11 @@ body
   height: 100%
 
 body
-  font: 80% Arial, sans-serif
+  font: 16px plumb-re, Arial, sans-serif
   min-width: $page-width
 
 @import('fonts')
+@import('common')
 @import('header/header')
 @import('navigation/navigation')
 @import('footer/footer')
