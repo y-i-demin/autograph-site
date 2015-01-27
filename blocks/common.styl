@@ -197,9 +197,6 @@ a
     min-width: 220px
     margin-bottom: 20px
 
-.portfolio
-  margin: 50px 0 70px
-
 .downloads
   font-size: 14px
 
@@ -290,3 +287,94 @@ a
     background: no-repeat left top $grey-xl url('../i/arrow.png')
 
     content: ''
+
+.portfolio
+  margin: 50px 0 70px
+
+  clearfix()
+
+  &-item
+    display: block
+
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 110%
+
+    transition: background-size .25s ease-out
+
+    &:hover
+      background-size: 120%
+
+  &-covers-l
+    float: left
+    width: 309px
+
+    margin: 0 5px 0 0
+
+    & a
+      margin: 0 0 5px 0
+
+    &_1
+      height: 357px
+      background-image: url('../portfolio/cover-l-1_s.jpg')
+
+    &_2
+      height: 348px
+      background-image: url('../portfolio/cover-l-2_s.jpg')
+
+    &_3
+      height: 245px
+      background-image: url('../portfolio/cover-l-3_s.jpg')
+
+  &-covers-r
+    float: left
+    width: 689px
+    margin: 0 0 5px 0
+
+    clearfix()
+
+    &_1
+      float: left
+
+      width: 409px
+      height: 275px
+      margin: 0 5px 5px 0
+
+      background-image: url('../portfolio/cover-r-1_s.jpg')
+
+    &_2
+      float: left
+
+      width: 275px
+      height: 275px
+      margin: 0 0 5px 0
+
+      background-image: url('../portfolio/cover-r-2_s.jpg')
+
+    &_3
+      width: 690px
+      height: 680px
+
+      clear: both
+
+      background-image: url('../portfolio/cover-r-3_s.jpg')
+
+  &-covers-b
+    clearfix()
+
+    &_1
+      float: left
+
+      width: 689px
+      height: 459px
+      margin: 0 5px 0 0
+
+      background-image: url('../portfolio/cover-b-1_s.jpg')
+
+    &_2
+      float: left
+
+      width: 306px
+      height: 459px
+
+      background-image: url('../portfolio/cover-b-2_s.jpg')
