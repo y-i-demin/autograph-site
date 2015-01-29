@@ -544,6 +544,11 @@ a
   border-top: 1px solid $grey-xl
   border-bottom: 15px solid $grey-xl
 
+  &:after
+    display: block
+    content: ' '
+    clear: both
+
   &-title
     position: absolute
     left: 100px
@@ -561,15 +566,16 @@ a
 
   &-list
     list-style: none
-    display: flex
-    flex-wrap: wrap
 
   &-item
     font-family: plumb-bo
     font-size: 18px
 
+    float: left
+
     width: 23%
     margin-right: 2%
+    min-height: 145px
     margin-bottom: 50px
 
     color: $grey-xxd
@@ -585,25 +591,25 @@ a
       background-image: url('../i/advantages-icons.png')
 
     &__orders &-icon
-      background-position-y: -66px
+      background-position: 10px -66px
 
     &__documents &-icon
-      background-position-y: -126px
+      background-position: 10px -126px
 
     &__warranty &-icon
-      background-position-y: -184px
+      background-position: 10px -184px
 
     &__sale &-icon
-      background-position-y: -255px
+      background-position: 10px -255px
 
     &__payment &-icon
-      background-position-y: -309px
+      background-position: 10px -309px
 
     &__examples &-icon
-      background-position-y: -371px
+      background-position: 10px -371px
 
     &__ad &-icon
-      background-position-y: -436px
+      background-position: 10px -436px
 
     &__warranty,
     &__sale,
