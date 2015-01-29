@@ -49,7 +49,7 @@
 
 
             this.box.appendTo('body');
-            this.bindEvents();
+            //this.bindEvents();
         }
     }
 })();
