@@ -8,6 +8,8 @@
         showItem: function(event) {
             event.preventDefault();
 
+            return;
+
             app.paranja.removeClass('g-hidden');
             this.box.removeClass('g-hidden');
 
@@ -49,7 +51,7 @@
 
 
             this.box.appendTo('body');
-            //this.bindEvents();
+            this.bindEvents();
         }
     }
 })();
