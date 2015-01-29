@@ -79,6 +79,9 @@ a
 
     color: $grey-xxd
 
+    &__accs
+      max-width: 100%
+
   &-info
     padding-top: 375px
 
@@ -108,6 +111,9 @@ a
       font-size: 22px
 
       text-transform: uppercase
+
+      &__offset
+        margin-bottom: 13px
 
     &-list
       list-style: none
@@ -147,19 +153,24 @@ a
 
     &-img
       position: absolute
-      left: -220px
+      left: -260px
       top: 0
 
       display: block
 
-      width: 296px
-      height: 450px
+      width: 336px
+      height: 455px
 
       background-repeat: no-repeat
-      background-position: left top
+      background-position: right top
 
       &__cover
         background-image: url('../i/goods-cover.png')
+
+      &__accs
+        height: 505px
+        background-position: right 50px
+        background-image: url('../i/goods-accs.jpg')
 
     &-icon
       padding-left: 70px
@@ -546,9 +557,10 @@ a
   &-stoles-b
     clearfix()
 
-    &_1
+    & .portfolio-item
       float: left
 
+    &_1
       width: 116px
       height: 277px
       margin: 0 5px 0 0
@@ -556,8 +568,6 @@ a
       background-image: url('../portfolio/stole-b-1_s.jpg')
 
     &_2
-      float: left
-
       width: 435px
       height: 277px
       margin: 0 5px 0 0
@@ -565,27 +575,25 @@ a
       background-image: url('../portfolio/stole-b-2_s.jpg')
 
     &_3
-      float: left
-
       width: 434px
       height: 277px
 
       background-image: url('../portfolio/stole-b-3_s.jpg')
 
+
   &-stoles
     clearfix()
 
-    &_1
+    & .portfolio-item
       float: left
 
+    &_1
       width: 373px
       height: 247px
 
       background-image: url('../portfolio/stole-1_s.jpg')
 
     &_2
-      float: left
-
       width: 324px
       height: 247px
 
@@ -593,26 +601,68 @@ a
 
     &_3
       clear: both
-      float: left
-
       width: 373px
       height: 251px
 
       background-image: url('../portfolio/stole-3_s.jpg')
 
     &_4
-      float: left
-
       width: 324px
       height: 251px
 
       background-image: url('../portfolio/stole-4_s.jpg')
 
     &_5
-      float: left
-
       margin-top: -247px
       width: 304px
       height: 498px
 
       background-image: url('../portfolio/stole-5_s.jpg')
+
+  &-accs
+    clearfix()
+
+    & .portfolio-item
+      float: left
+
+    &_1
+      width: 249px
+      height: 499px
+
+      background-image: url('../portfolio/accs-1_s.jpg')
+
+    &_2
+      width: 504px
+      height: 499px
+
+      background-image: url('../portfolio/accs-2_s.jpg')
+
+    &_3
+      width: 248px
+      height: 277px
+
+      background-image: url('../portfolio/accs-3_s.jpg')
+
+    &_4
+      width: 248px
+      height: 222px
+
+      background-image: url('../portfolio/accs-4_s.jpg')
+
+    &_5
+      width: 249px
+      height: 229px
+
+      background-image: url('../portfolio/accs-5_s.jpg')
+
+    &_6
+      width: 332px
+      height: 229px
+
+      background-image: url('../portfolio/accs-6_s.jpg')
+
+    &_7
+      width: 422px
+      height: 229px
+
+      background-image: url('../portfolio/accs-7_s.jpg')
