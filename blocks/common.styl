@@ -13,7 +13,7 @@ h2
 
 h1
   font-size: 62px
-  max-width: 580px
+  max-width: 610px
 
 h2
   font-weight: normal
@@ -63,6 +63,12 @@ a
   &-shift
     padding: 0 100px
 
+  &-stole-about
+    padding-top: 30px
+    max-width: 470px
+
+    border-top: 1px solid $grey-l
+
 .goods
   &-about
     font-family: plumb-bo
@@ -79,6 +85,9 @@ a
     &__covers
       background: no-repeat left top url('../i/seat-covers.png')
 
+    &__stole
+      background: no-repeat left top url('../i/seat-stole.jpg')
+
   &-behaviour
     position: relative
 
@@ -91,13 +100,50 @@ a
 
     color: $grey-xxd
 
+    &__stole
+      padding: 30px 0 0
+
+    &-title
+      font-family: plumb-bo
+      font-size: 22px
+
+      text-transform: uppercase
+
     &-list
-      display: table
       list-style: none
 
     &-item
       max-width: 370px
       margin-bottom: 30px
+
+    &__stole &-item
+      float: left
+
+      width: 230px
+      padding-top: 125px
+      margin: 0 0 0 40px
+
+      &:first-child
+        margin-left: 0
+
+    &-subitem
+      position: relative
+      list-style: none
+
+      margin-top: 20px
+      padding-left: 15px
+
+      &::before
+        position: absolute
+        left: 0
+        top: -25px
+
+        font-size: 40px
+
+        display: block
+
+        color: $brown-l
+        content: '.'
 
     &-img
       position: absolute
@@ -134,6 +180,15 @@ a
           padding-top: 5px
           background-position: left -220px
 
+      &__stole
+        background-image: url('../i/behaviours-icons-stole.jpg')
+
+        &_2
+          background-position: -310px top
+
+    &__stole &-icon
+      padding-left: 0
+
 .incut
   font-size: 19px
 
@@ -142,8 +197,14 @@ a
 
   color: #fff
 
+  background-repeat: no-repeat
+  background-position: center
+
   &__covers
-    background: no-repeat center url('../i/incut-covers.png')
+    background-image: url('../i/incut-covers.png')
+
+  &__stole
+    background-image: url('../i/incut-stole.jpg')
 
 .warranty
   font-size: 38px
@@ -176,7 +237,7 @@ a
     margin-left: (($page-width - @width * 3) / 2)
 
     &:first-child
-      margin-left: 0
+      margin-left: 0 !important
 
   &-link:link,
   &-link:visited
@@ -189,7 +250,15 @@ a
     &:active
       text-decoration: none
 
-.covers-for
+  &-stole
+    width: 680px
+    margin: 0 auto
+
+  &-stole &-item
+    margin-left: 80px
+
+.covers-for,
+.stole-for
   list-style: none
 
   clearfix()
@@ -198,6 +267,26 @@ a
     float: left
     min-width: 220px
     margin-bottom: 20px
+
+.stole-for
+  & LI
+    padding-top: 210px
+    margin-right: 20px
+    width: 195px
+    min-width: 0
+
+    background-repeat : no-repeat
+    background-image: url('../i/incut-stole-icons.png')
+
+  &__first
+    background-position: left top
+
+  &__second
+    background-position: -210px top
+
+  &__third
+    width: 215px !important
+    background-position: -425px top
 
 .downloads
   font-size: 14px
@@ -385,6 +474,7 @@ a
       background-image: url('../portfolio/cover-r-3_s.jpg')
 
   &-covers-b
+    /*float: left*/
     clearfix()
 
     &_1
@@ -403,3 +493,126 @@ a
       height: 459px
 
       background-image: url('../portfolio/cover-b-2_s.jpg')
+
+  &-stoles-l
+    float: left
+    width: 309px
+    margin: 0 5px 0 0
+
+    & a
+      margin: 0 0 5px 0
+
+    &_1
+      height: 505px
+      background-image: url('../portfolio/stole-l-1_s.jpg')
+
+    &_2
+      height: 218px
+      background-image: url('../portfolio/stole-l-2_s.jpg')
+
+  &-stoles-r
+    float: left
+    width: 689px
+    margin: 0 0 5px 0
+
+    clearfix()
+
+    &_1
+      float: left
+
+      width: 409px
+      height: 273px
+      margin: 0 5px 5px 0
+
+      background-image: url('../portfolio/stole-r-1_s.jpg')
+
+    &_2
+      float: left
+
+      width: 275px
+      height: 273px
+      margin: 0 0 5px 0
+
+      background-image: url('../portfolio/stole-r-2_s.jpg')
+
+    &_3
+      width: 689px
+      height: 450px
+
+      clear: both
+
+      background-image: url('../portfolio/stole-r-3_s.jpg')
+
+  &-stoles-b
+    clearfix()
+
+    &_1
+      float: left
+
+      width: 116px
+      height: 277px
+      margin: 0 5px 0 0
+
+      background-image: url('../portfolio/stole-b-1_s.jpg')
+
+    &_2
+      float: left
+
+      width: 435px
+      height: 277px
+      margin: 0 5px 0 0
+
+      background-image: url('../portfolio/stole-b-2_s.jpg')
+
+    &_3
+      float: left
+
+      width: 434px
+      height: 277px
+
+      background-image: url('../portfolio/stole-b-3_s.jpg')
+
+  &-stoles
+    clearfix()
+
+    &_1
+      float: left
+
+      width: 373px
+      height: 247px
+
+      background-image: url('../portfolio/stole-1_s.jpg')
+
+    &_2
+      float: left
+
+      width: 324px
+      height: 247px
+
+      background-image: url('../portfolio/stole-2_s.jpg')
+
+    &_3
+      clear: both
+      float: left
+
+      width: 373px
+      height: 251px
+
+      background-image: url('../portfolio/stole-3_s.jpg')
+
+    &_4
+      float: left
+
+      width: 324px
+      height: 251px
+
+      background-image: url('../portfolio/stole-4_s.jpg')
+
+    &_5
+      float: left
+
+      margin-top: -247px
+      width: 304px
+      height: 498px
+
+      background-image: url('../portfolio/stole-5_s.jpg')
