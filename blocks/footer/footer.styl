@@ -14,6 +14,10 @@
 
   text-transform: uppercase
 
+  .main &
+    border-color: $m-grey-l
+    color: #b5b4b4
+
   &-more
     position: absolute
     left: 50%
@@ -28,8 +32,12 @@
     margin-left: -79px
 
 
-    background: no-repeat left center url("../i/logo-footer.png")
+    background: no-repeat left center url('../i/logo-footer.png')
     color: $grey-xd
 
     text-transform: none
     text-decoration: none
+
+    .main &
+      background-image: url('../i/logo-footer-m.png')
+      color: #b5b4b4

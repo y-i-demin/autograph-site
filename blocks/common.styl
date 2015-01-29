@@ -63,6 +63,9 @@ a
   &-shift
     padding: 0 100px
 
+    &__main
+      padding: 40px 0 100px 100px
+
   &-stole-about
     padding-top: 30px
     max-width: 470px
@@ -72,6 +75,12 @@ a
   &__contacts
     padding-bottom: 35px
     border-bottom: 7px solid $blue-d
+
+  &__main
+    font-size: 27px
+
+    text-transform: uppercase
+    color: #fff
 
 .goods
   &-about
@@ -85,6 +94,15 @@ a
 
     &__accs
       max-width: 100%
+
+  &-link
+    color: #fff
+    text-decoration: none
+    border-bottom: 1px solid $brown-l
+
+    &:hover,
+    &:active
+      border-color: #fff
 
   &-info
     padding-top: 375px
@@ -430,3 +448,42 @@ a
     &:hover,
     &:active
       color: $brown-l
+
+.main
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url('../i/bg-main.jpg')
+
+  &-where
+    font-size: 14px
+
+  &-services
+    font-family: plumb-bo
+    font-size: 15px
+
+    margin-top: 120px
+    list-style: none
+
+    clearfix()
+
+    &-item
+      float: left
+
+      padding-top: 70px
+      margin-left: 100px
+      width: 120px
+
+      background: no-repeat left top url('../i/services-icons.png')
+
+      &:first-child
+        margin-left: 0
+
+      &__template
+        background-position: -150px top
+
+      &__sewing
+        background-position: -300px top
+
+      &__special
+        background-position: -450px top
