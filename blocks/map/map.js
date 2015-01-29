@@ -1,4 +1,8 @@
 $(function() {
+    if (!window.google) {
+        return;
+    }
+
     var styles = [{
         stylers: [
             { hue: '#c7d4e0' },
