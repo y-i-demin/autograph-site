@@ -69,6 +69,10 @@ a
 
     border-top: 1px solid $grey-l
 
+  &__contacts
+    padding-bottom: 35px
+    border-bottom: 7px solid $blue-d
+
 .goods
   &-about
     font-family: plumb-bo
@@ -398,3 +402,31 @@ a
   bottom: 0
 
   background: rgba(27, 41, 55, .95)
+
+.contacts
+  font-family: calibri-bo
+  font-size: 18px
+  font-weight: normal
+
+  margin-top: 15px
+
+  color: $blue-d
+
+  clearfix()
+
+  &-addr,
+  &-phones
+    float: left
+
+  &-addr
+    width: 380px
+    margin-right: 20px
+
+  & a:link,
+  & a:visited
+    color: $blue-d
+    text-decoration: none
+
+    &:hover,
+    &:active
+      color: $brown-l
